@@ -40,6 +40,9 @@ body
       .fill
         font-size 2em
 
+        abbr
+          display block
+
 
     .back
       color inherit
@@ -60,11 +63,14 @@ body
       display block
       font-family $displayFont
       font-size 1.2em
-      padding 8% 0
+      padding 15% 0
       width 100%
       height 100%
       text-align center
       text-decoration none
+
+      abbr
+        display none
 
     &.blue,
     &.black,
@@ -83,8 +89,8 @@ body
       span(1/2)
       display block
 
-      a
-        padding 10% 0
+      .fill
+        padding 20% 0
 
     @media screen and (min-width: 40em)
       span(1/3)
@@ -94,15 +100,12 @@ body
       span(1/4)
       display block
 
-      a
-        padding 18% 0
+      .fill
+        padding 25% 0
 
     @media screen and (min-width: 80em)
       span(1/5)
       display block
-
-      a
-        padding 24 % 0
 
     @media screen and (min-width: 96em)
       span(1/7)

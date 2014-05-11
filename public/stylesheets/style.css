@@ -134,6 +134,9 @@ body {
 .colors .color:target .fill {
   font-size: 2em;
 }
+.colors .color:target .fill abbr {
+  display: block;
+}
 .colors .color .back {
   color: inherit;
   display: none;
@@ -153,11 +156,14 @@ body {
   display: block;
   font-family: 'ComicNeue-Angular-Bold-Oblique', 'Comic Sans MS', cursive;
   font-size: 1.2em;
-  padding: 8% 0;
+  padding: 15% 0;
   width: 100%;
   height: 100%;
   text-align: center;
   text-decoration: none;
+}
+.colors .color .fill abbr {
+  display: none;
 }
 .colors .color.blue a,
 .colors .color.black a,
@@ -193,8 +199,8 @@ body {
   .colors .color:after {
     clear: both;
   }
-  .colors .color a {
-    padding: 10% 0;
+  .colors .color .fill {
+    padding: 20% 0;
   }
 }
 @media screen and (min-width: 40em) {
@@ -242,8 +248,8 @@ body {
   .colors .color:after {
     clear: both;
   }
-  .colors .color a {
-    padding: 18% 0;
+  .colors .color .fill {
+    padding: 25% 0;
   }
 }
 @media screen and (min-width: 80em) {
@@ -267,9 +273,6 @@ body {
   }
   .colors .color:after {
     clear: both;
-  }
-  .colors .color a {
-    padding: NaN;
   }
 }
 @media screen and (min-width: 96em) {
