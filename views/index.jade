@@ -1,6 +1,13 @@
 extends layout
 
 block content
+  header.site-header
+    form.color-type
+      input#name(name="color-type", type="radio", checked)
+      label(for="name") Color Name
+
+      input#code(name="color-type", type="radio")
+      label(for="code") Hex Color
 
   mixin colors(colors)
     ul.colors
@@ -12,5 +19,3 @@ block content
             abbr= color.hex
 
   +colors(colors)
-
-block footerScripts

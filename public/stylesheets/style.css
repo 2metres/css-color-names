@@ -102,7 +102,51 @@ a img {
   box-sizing: border-box;
 }
 body {
-  font: 1em/1.4 "HelveticaNeue-Light", "Helvetica Neue", "Helvetica", "Arial, sans-serif";
+  font: 1em/1.4 "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial, sans-serif";
+}
+.site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3em;
+  background: #fff;
+  text-align: center;
+}
+.site-header + .colors {
+  top: 3em;
+}
+.color-type {
+  zoom: 1;
+  margin: 0.25em 0;
+  padding: 0.5em 0;
+}
+.color-type:before,
+.color-type:after {
+  content: "";
+  display: table;
+}
+.color-type:after {
+  clear: both;
+}
+.color-type input {
+  display: none;
+}
+.color-type input:checked + label {
+  background-color: #000;
+  color: #fff;
+}
+.color-type label {
+  padding: 0.5em 1em;
+  border: 2px #000 solid;
+}
+.color-type label:first-of-type {
+  -webkit-border-radius: 0.5em 0 0 0.5em;
+  border-radius: 0.5em 0 0 0.5em;
+}
+.color-type label:last-of-type {
+  -webkit-border-radius: 0 0.5em 0.5em 0;
+  border-radius: 0 0.5em 0.5em 0;
 }
 .colors {
   -webkit-transform: tranlateZ(0);

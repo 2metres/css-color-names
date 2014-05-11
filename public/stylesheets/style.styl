@@ -12,7 +12,41 @@ $displayFont = 'ComicNeue-Angular-Bold-Oblique', 'Comic Sans MS', cursive
   box-sizing border-box
 
 body
-  font 1em/1.4 "HelveticaNeue-Light", "Helvetica Neue", "Helvetica", "Arial, sans-serif"
+  font 1em/1.4 "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial, sans-serif"
+
+.site-header
+  position fixed
+  top 0
+  right 0
+  left 0
+  height 3em
+  background white
+  text-align center
+
+  & + .colors
+    top 3em
+
+.color-type
+  clearfix()
+  margin 0.25em 0
+  padding 0.5em 0
+
+  input
+    display none
+
+    &:checked
+      & + label
+        background-color black
+        color white
+
+  label
+    padding 0.5em 1em
+    border 2px black solid
+
+    &:first-of-type
+      border-radius 0.5em 0 0 0.5em
+    &:last-of-type
+      border-radius 0 0.5em 0.5em 0
 
 .colors
   transform(tranlateZ(0))
