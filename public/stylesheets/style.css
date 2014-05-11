@@ -109,44 +109,63 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  height: 3em;
-  background: #fff;
+  background: rgba(0,0,0,0.8);
   text-align: center;
+  padding: 0.5em 0;
 }
 .site-header + .colors {
   top: 3em;
 }
 .color-type {
-  zoom: 1;
-  margin: 0.25em 0;
-  padding: 0.5em 0;
-}
-.color-type:before,
-.color-type:after {
-  content: "";
-  display: table;
-}
-.color-type:after {
-  clear: both;
+  display: inline-block;
+  position: relative;
+  padding: 0.25em 0;
+  margin: 0;
+  border: 2px #fff solid;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  overflow: hidden;
 }
 .color-type input {
   display: none;
 }
 .color-type input:checked + label {
-  background-color: #000;
-  color: #fff;
+  color: #000;
 }
 .color-type label {
+  -webkit-transition: color 100ms 300ms linear;
+  -moz-transition: color 100ms 300ms linear;
+  -o-transition: color 100ms 300ms linear;
+  -ms-transition: color 100ms 300ms linear;
+  transition: color 100ms 300ms linear;
+  position: relative;
+  display: inline-block;
+  color: #fff;
   padding: 0.5em 1em;
-  border: 2px #000 solid;
+  font-weight: bold;
+  min-width: 12em;
+  z-index: 10;
 }
-.color-type label:first-of-type {
-  -webkit-border-radius: 0.5em 0 0 0.5em;
-  border-radius: 0.5em 0 0 0.5em;
+.color-type .slider {
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -moz-transition: -moz-transform 300ms ease-in-out;
+  -o-transition: -o-transform 300ms ease-in-out;
+  -ms-transition: -ms-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 5;
 }
-.color-type label:last-of-type {
-  -webkit-border-radius: 0 0.5em 0.5em 0;
-  border-radius: 0 0.5em 0.5em 0;
+.color-type #code:checked ~ .slider {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
 }
 .colors {
   -webkit-transform: tranlateZ(0);
@@ -154,7 +173,7 @@ body {
   -o-transform: tranlateZ(0);
   -ms-transform: tranlateZ(0);
   transform: tranlateZ(0);
-  padding: 0;
+  padding: 4em 0;
   list-style: none;
 }
 .colors .color {
