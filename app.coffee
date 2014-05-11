@@ -1,16 +1,16 @@
+http = require("http")
+  colors = require("data/colors.json")
+express = require("express")
+stylus = require("stylus")
+nib = require("nib")
+jeet = require("jeet")
+fontFace = require('stylus-font-face')
+
 compile = (str, path) ->
   stylus(str).set("filename", path)
     .use nib()
     .use jeet()
     .use fontFace()
-
-http = require("http")
-express = require("express")
-stylus = require("stylus")
-nib = require("nib")
-jeet = require("jeet")
-colors = require("data/colors.json")
-fontFace = require('stylus-font-face')
 
 app = express()
 
