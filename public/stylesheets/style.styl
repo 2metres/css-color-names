@@ -23,6 +23,7 @@ body
     margin 0
     text-align center
     width 100%
+    color rgba(black, 0.4)
 
     &:target
       position fixed
@@ -33,9 +34,28 @@ body
       z-index 10
       width 100%
 
-    a
+      .back
+        display block
+
+      .fill
+        font-size 2em
+
+
+    .back
+      display none
+      font-size 3em
+      position fixed
+      padding 0
+      padding-left 0.5em
+      top 0
+      right 0
+      bottom 0
+      left 0
+      color inherit
+      text-decoration none
+
+    .fill
       border none
-      color rgba(black, 0.4)
       display block
       font-family $displayFont
       font-size 1.2em
@@ -44,6 +64,7 @@ body
       height 100%
       text-align center
       text-decoration none
+      color inherit
 
     &.blue,
     &.black,
@@ -58,12 +79,16 @@ body
       a
         color rgba(white, 0.8)
 
-    @media screen and (min-width: 40em)
+    @media screen and (min-width: 32em)
       span(1/2)
       display block
 
       a
         padding 10% 0
+
+    @media screen and (min-width: 40em)
+      span(1/3)
+      display block
 
     @media screen and (min-width: 60em)
       span(1/4)

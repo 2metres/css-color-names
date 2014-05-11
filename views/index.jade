@@ -6,7 +6,8 @@ block content
     ul.colors
       - each color in colors
         li(id="#{color}", class="color #{color}")
-          a(href="##{color}", style="background-color:#{color}")= color
+          a.back(href="#")&times;
+          a.fill(href="##{color}", style="background-color:#{color}")= color
 
   +colors(colors)
 
