@@ -1,5 +1,5 @@
 http = require("http")
-  colors = require("data/colors.json")
+colors = require("./data/colors")
 express = require("express")
 stylus = require("stylus")
 nib = require("nib")
