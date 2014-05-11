@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+  mixin colors(colors)
+    ul.colors
+      - each color in colors
+        li(id="#{color}", class="color #{color}")
+          a(href="##{color}", style="background-color:#{color}")= color
+
+  +colors(colors)
+
+block footerScripts

@@ -1,0 +1,17 @@
+{
+  "name": "CssColorNames",
+  "version": "0.0.1",
+  "private": "true",
+  "scripts": {
+    "start": "./node_modules/coffee-script/bin/coffee app.coffee"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "jade": "*",
+    "jeet": "*",
+    "stylus": "*",
+    "nib": "*",
+    "coffee-script": "*",
+    "stylus-font-face": "^0.1.0"
+  }
+}

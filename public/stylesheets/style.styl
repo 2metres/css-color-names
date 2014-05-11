@@ -1,0 +1,84 @@
+@import 'nib'
+@import 'jeet'
+@import 'font-face'
+
+global-reset()
+
+font-face(ComicNeue-Angular-Bold-Oblique, ComicNeue-Angular-Bold-Oblique)
+
+$displayFont = 'ComicNeue-Angular-Bold-Oblique', 'Comic Sans MS', cursive
+
+*
+  box-sizing border-box
+
+body
+  font 1em/1.4 "HelveticaNeue-Light", "Helvetica Neue", "Helvetica", "Arial, sans-serif"
+
+.colors
+  transform(tranlateZ(0))
+  padding 0
+  list-style none
+
+  .color
+    margin 0
+    text-align center
+    width 100%
+
+    &:target
+      position fixed
+      top 0
+      right 0
+      bottom 0
+      left 0
+      z-index 10
+      width 100%
+
+    a
+      border none
+      color rgba(black, 0.4)
+      display block
+      font-family $displayFont
+      font-size 1.2em
+      padding 8% 0
+      width 100%
+      height 100%
+      text-align center
+      text-decoration none
+
+    &.blue,
+    &.black,
+    &.indigo,
+    &.maroon,
+    &.midnightblue,
+    &.navy,
+    &.purple,
+    &[class*="dark"],
+    &[class*="deep"],
+    &[class*="medium"]
+      a
+        color rgba(white, 0.8)
+
+    @media screen and (min-width: 40em)
+      span(1/2)
+      display block
+
+      a
+        padding 10% 0
+
+    @media screen and (min-width: 60em)
+      span(1/4)
+      display block
+
+      a
+        padding 18% 0
+
+    @media screen and (min-width: 80em)
+      span(1/5)
+      display block
+
+      a
+        padding 24 % 0
+
+    @media screen and (min-width: 96em)
+      span(1/7)
+      display block

@@ -1,0 +1,254 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+@font-face {
+  font-family: ComicNeue-Angular-Bold-Oblique;
+  src: url("fonts/ComicNeue-Angular-Bold-Oblique.eot");
+  src: url("fonts/ComicNeue-Angular-Bold-Oblique.eot?#iefix") format("embedded-opentype"), url("fonts/ComicNeue-Angular-Bold-Oblique.woff") format("woff"), url("fonts/ComicNeue-Angular-Bold-Oblique.ttf") format("truetype"), url("fonts/ComicNeue-Angular-Bold-Oblique.svg#ComicNeue-Angular-Bold-Oblique") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font: 1em/1.4 "HelveticaNeue-Light", "Helvetica Neue", "Helvetica", "Arial, sans-serif";
+}
+.colors {
+  -webkit-transform: tranlateZ(0);
+  -moz-transform: tranlateZ(0);
+  -o-transform: tranlateZ(0);
+  -ms-transform: tranlateZ(0);
+  transform: tranlateZ(0);
+  padding: 0;
+  list-style: none;
+}
+.colors .color {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.colors .color:target {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.colors .color a {
+  border: none;
+  color: rgba(0,0,0,0.4);
+  display: block;
+  font-family: 'ComicNeue-Angular-Bold-Oblique', 'Comic Sans MS', cursive;
+  font-size: 1.2em;
+  padding: 8% 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.colors .color.blue a,
+.colors .color.black a,
+.colors .color.indigo a,
+.colors .color.maroon a,
+.colors .color.midnightblue a,
+.colors .color.navy a,
+.colors .color.purple a,
+.colors .color[class*="dark"] a,
+.colors .color[class*="deep"] a,
+.colors .color[class*="medium"] a {
+  color: rgba(255,255,255,0.8);
+}
+@media screen and (min-width: 40em) {
+  .colors .color {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: block;
+  }
+  .colors .color:before,
+  .colors .color:after {
+    content: '';
+    display: table;
+  }
+  .colors .color:after {
+    clear: both;
+  }
+  .colors .color a {
+    padding: 10% 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  .colors .color {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: block;
+  }
+  .colors .color:before,
+  .colors .color:after {
+    content: '';
+    display: table;
+  }
+  .colors .color:after {
+    clear: both;
+  }
+  .colors .color a {
+    padding: 18% 0;
+  }
+}
+@media screen and (min-width: 80em) {
+  .colors .color {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: block;
+  }
+  .colors .color:before,
+  .colors .color:after {
+    content: '';
+    display: table;
+  }
+  .colors .color:after {
+    clear: both;
+  }
+  .colors .color a {
+    padding: NaN;
+  }
+}
+@media screen and (min-width: 96em) {
+  .colors .color {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 14.285714285714299%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: block;
+  }
+  .colors .color:before,
+  .colors .color:after {
+    content: '';
+    display: table;
+  }
+  .colors .color:after {
+    clear: both;
+  }
+}
