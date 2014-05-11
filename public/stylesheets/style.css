@@ -142,9 +142,9 @@ body {
   display: none;
   font-size: 3em;
   position: fixed;
-  padding: 0;
-  padding-left: 0.5em;
+  padding: 0 0.5em;
   text-decoration: none;
+  text-align: right;
   top: 0;
   right: 0;
   bottom: 0;
