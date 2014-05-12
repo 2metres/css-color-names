@@ -14,7 +14,7 @@ block content
     ul.colors
       - each color in colors
         li(id="#{color.name}", class="color #{color.name}")
-          a.back(href="#") &times;
+          a.back(href="##") &times;
           a.fill(href="##{color.name}", style="background-color:#{color.name}")
             h2= color.name
             abbr= color.hex
